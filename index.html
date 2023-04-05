@@ -10,29 +10,86 @@
 		/>
 		<meta name="keywords" content="website, site, CSS, HTML, proeict" />
 		<meta name="author" content="LinkAcademy" />
+		<!-- favicon -->
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./assets/favicon/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./assets/favicon/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="./assets/favicon/site.webmanifest" />
+		<link
+			rel="mask-icon"
+			href="./assets/favicon/safari-pinned-tab.svg"
+			color="#5bbad5"
+		/>
+		<meta name="msapplication-TileColor" content="#da532c" />
+		<meta name="theme-color" content="#ffffff" />
+		<!-- end favicon -->
 		<title>Cats Project 2023</title>
+		<!-- CSS -->
 		<link rel="stylesheet" href="./assets/css/style.css" />
 	</head>
 	<body>
 		<header>
+			<!-- Logo -->
 			<div id="logo">
-				<div id="logo logo-icon">
-					<img src="./assets/img/logo.png" alt="Cats" />
+				<div id="logo-text">
+					<h1>
+						<a href="/"
+							>Demo<span class="logo_colour">Cats</span></a
+						>
+					</h1>
+					<h2>First project <span>HTML&CSS</span> .</h2>
 				</div>
 			</div>
-			<nav>
-				<ul>
-					<li class="selected"><a href="/">Acasa</a></li>
-					<li><a href="./assets/pages/despre.html">Despre</a></li>
+			<!-- Menubar -->
+			<nav id="menubar">
+				<!-- Hamburger icon -->
+				<a href="#" class="logo"
+					><img src="./assets/img/logo.png" alt="Cats" class="hidden"
+				/></a>
+				<input
+					class="side-menu hidden"
+					type="checkbox"
+					id="side-menu"
+				/>
+				<label class="hamb" for="side-menu"
+					><span class="hamb-line"></span
+				></label>
+				<!-- List -->
+				<ul id="menu">
+					<li class="selected"><a href="/">Home</a></li>
+					<li><a href="./despre.html">About</a></li>
 					<li>
-						<a href="./assets/pages/portofoliu.html">Portofoliu</a>
+						<a href="./portofoliu.html">Portofoliu</a>
 					</li>
-					<li><a href="./assets/pages/blog.html">Blog</a></li>
-					<li><a href="./assets/pages/contact.html">Contact</a></li>
+					<li><a href="./blog.html">Blog</a></li>
+					<li><a href="./contact.html">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
 		<main></main>
-		<footer></footer>
+		<footer id="footer">
+			<p>
+				<a href="index.html">Home</a> |
+				<a href="contact.html">Contact</a>
+			</p>
+			<p>
+				Copyright &copy; Timi Petre | <a href="">HTML5</a> |
+				<a href="">CSS</a>
+			</p>
+		</footer>
 	</body>
 </html>
