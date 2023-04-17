@@ -1,39 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 	<head>
 		<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta
-			name="description"
-			content="Proiect demo de la cursul de HTML CSS "
-		/>
+		<meta name="description" content="Proiect demo de la cursul de HTML CSS " />
 		<meta name="keywords" content="website, site, CSS, HTML, proeict" />
 		<meta name="author" content="LinkAcademy" />
 		<!-- favicon -->
-		<link
-			rel="apple-touch-icon"
-			sizes="180x180"
-			href="./assets/favicon/apple-touch-icon.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="./assets/favicon/favicon-32x32.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="16x16"
-			href="./assets/favicon/favicon-16x16.png"
-		/>
+		<link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
 		<link rel="manifest" href="./assets/favicon/site.webmanifest" />
-		<link
-			rel="mask-icon"
-			href="./assets/favicon/safari-pinned-tab.svg"
-			color="#5bbad5"
-		/>
+		<link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
 		<meta name="msapplication-TileColor" content="#da532c" />
 		<meta name="theme-color" content="#ffffff" />
 		<!-- end favicon -->
@@ -41,15 +21,14 @@
 		<!-- CSS -->
 		<link rel="stylesheet" href="./assets/css/style.css" />
 	</head>
+
 	<body>
 		<header>
 			<!-- Logo -->
 			<div id="logo">
 				<div id="logo-text">
 					<h1>
-						<a href="/"
-							>Demo<span class="logo_colour">Cats</span></a
-						>
+						<a href="./index.html">Demo<span class="logo_colour">Cats</span></a>
 					</h1>
 					<h2>First project <span>HTML&CSS</span> .</h2>
 				</div>
@@ -57,20 +36,12 @@
 			<!-- Menubar -->
 			<nav id="menubar">
 				<!-- Hamburger icon -->
-				<a href="#" class="logo"
-					><img src="./assets/img/logo.png" alt="Cats" class="hidden"
-				/></a>
-				<input
-					class="side-menu hidden"
-					type="checkbox"
-					id="side-menu"
-				/>
-				<label class="hamb" for="side-menu"
-					><span class="hamb-line"></span
-				></label>
+				<a href="#" class="logo"><img src="./assets/img/logo.png" alt="Cats" class="hidden" /></a>
+				<input class="side-menu hidden" type="checkbox" id="side-menu" />
+				<label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
 				<!-- List -->
 				<ul id="menu">
-					<li class="selected"><a href="/">Home</a></li>
+					<li class="selected"><a href="./index.html">Home</a></li>
 					<li><a href="./despre.html">About</a></li>
 					<li>
 						<a href="./portofoliu.html">Portofoliu</a>
@@ -80,7 +51,73 @@
 				</ul>
 			</nav>
 		</header>
-		<main></main>
+		<main id="main">
+			<div id="site_content">
+				<div id="banner-container">
+					<div id="banner-img"></div>
+				</div>
+				<div class="container-row">
+					<h2>Latest images</h2>
+					<div class="row">
+						<div class="cols">
+							<img src="./assets/img/img1.jpg" alt="Image 1" class="img" loading="lazy">
+						</div>
+						<div class="cols"><img src="./assets/img/img2.jpg" alt="Image 2" class="img" loading="lazy">
+						</div>
+						<div class="cols"><img src="./assets/img/img3.jpg" alt="Image 3" class="img" loading="lazy">
+						</div>
+					</div>
+					<div class="row">
+						<div class="cols">
+							<img src="./assets/img/img4.jpg" alt="Image 4" class="img" loading="lazy">
+						</div>
+						<div class="cols"><img src="./assets/img/img5.jpg" alt="Image 5" class="img" loading="lazy">
+						</div>
+						<div class="cols"><img src="./assets/img/img6.jpg" alt="Image 6" class="img" loading="lazy">
+						</div>
+					</div>
+					<div class="row">
+						<div class="cols">
+							<img src="./assets/img/img7.jpg" alt="Image 7" class="img" loading="lazy">
+						</div>
+						<div class="cols"><img src="./assets/img/img8.jpg" alt="Image 8" class="img" loading="lazy">
+						</div>
+						<div class="cols"><img src="./assets/img/img9.jpg" alt="Image 9" class="img" loading="lazy">
+						</div>
+					</div>
+					<article id="article">
+						<section>
+							<span class="right">
+								<img src="./assets/img/orange-cats.jpg" alt="Orange Cat" loading="lazy">
+							</span>
+							<p>Orange cats, also known as ginger cats, are a popular feline breed that is recognized for their
+								distinctive orange fur.
+								These cats are known for their friendly and affectionate personalities, making them great companions for
+								humans.
+								Overall, orange cats are a beloved breed that brings joy and companionship to many cat lovers around the
+								world.</p>
+						</section>
+					</article>
+				</div>
+			</div>
+			<aside class="aside">
+				<div class="sidebar sidebar-search">
+					<h3>Search</h3>
+					<form action="">
+						<input type="search" name="search" id="search" placeholder="Search...">
+					</form>
+				</div>
+				<div class="sidebar sidebar-porftolio">
+					<h3>Portfolio</h3>
+					<div class="sidebar-container">
+						<ul>
+							<li><a href="https://timi-petre.github.io/">OnePage</a></li>
+							<li><a href="../../websitejs2023/shop2/index.html">Shop</a></li>
+						</ul>
+					</div>
+				</div>
+			</aside>
+		</main>
 		<footer id="footer">
 			<p>
 				<a href="index.html">Home</a> |
@@ -92,4 +129,5 @@
 			</p>
 		</footer>
 	</body>
+
 </html>
