@@ -1,0 +1,18 @@
+.sections {
+	margin-bottom: 18%;
+}
+
+.sections h3 {
+	color: #a531bc;
+	padding: 0 0 10px 0;
+	line-height: 1.7em;
+}
+
+.left > img {
+	width: 100%;
+	max-width: 45%;
+	height: 200px;
+	float: left;
+	margin: 5px 20px 0 0;
+	border-radius: 5px;
+}

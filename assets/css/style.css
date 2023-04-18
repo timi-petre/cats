@@ -4,6 +4,8 @@
 
 html {
 	height: 100%;
+	scroll-behavior: smooth;
+	scroll-padding: 10rem;
 }
 *,
 *::before,
@@ -38,6 +40,12 @@ h3,
 h2 {
 	font-size: 140%;
 	padding: 5px 0 0 0;
+}
+
+header,
+main,
+footer {
+	transition: all 1s ease-in-out;
 }
 
 /* Banner */
@@ -118,7 +126,12 @@ ul#menu li.selected a {
 }
 
 a:hover {
-	color: #c8b1c9 !important;
+	color: #c8b1c9;
+}
+
+a[href^='http'],
+a[href^='http'] {
+	color: purple;
 }
 
 .hidden {
@@ -150,6 +163,7 @@ a:hover {
 #banner-img:hover {
 	filter: blur(0);
 	transition: filter 400ms ease-in-out;
+	cursor: pointer;
 }
 
 /* Row */
@@ -185,9 +199,19 @@ a:hover {
 	margin: 0 auto;
 	float: left;
 	text-align: left;
+	padding: 0 5px;
 }
 
-.right {
+.img {
+	border-radius: 5px;
+}
+
+.img:hover {
+	filter: saturate(0.5);
+}
+
+.right,
+img.img {
 	float: right;
 	width: auto;
 	margin-left: 10px;
@@ -195,14 +219,16 @@ a:hover {
 	position: relative;
 }
 
-.right img {
+.right img,
+img.img {
 	width: 100%;
 	max-width: 300px;
 	transition: transform 0.25s;
 	vertical-align: top;
 }
 
-.right img:hover {
+.right img:hover,
+img.img:hover {
 	transform: scale(1.1);
 	transition: transform 0.25s;
 }
@@ -272,7 +298,7 @@ img {
 }
 
 .sidebar-porftolio {
-	margin-top: 8rem;
+	margin-top: 7rem;
 }
 
 .sidebar-container {
@@ -299,6 +325,11 @@ img {
 	list-style: none !important;
 }
 
+.sidebar-container > ul li a:hover {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
 /* FOOTER */
 #footer {
 	width: 100%;
@@ -311,6 +342,7 @@ img {
 	border-top: 2px solid #2d2d2d;
 	color: #ffffff;
 	position: sticky;
+	clear: both;
 }
 
 #footer p {

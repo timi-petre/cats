@@ -20,6 +20,7 @@
 		<title>Cats Project 2023</title>
 		<!-- CSS -->
 		<link rel="stylesheet" href="./assets/css/style.css" />
+		<link rel="stylesheet" href="./assets/css/contact.css" />
 	</head>
 
 	<body>
@@ -53,7 +54,99 @@
 				</ul>
 			</nav>
 		</header>
-		<main></main>
+		<main id="main">
+			<header>
+				<h3>Contact Form</h3>
+			</header>
+			<article>
+				<section>
+					<form action="" class="form-register" enctype="multipart/form-data">
+						<fieldset>
+							<legend>Card</legend>
+							<div class="form-row">
+								<label for="card">Card Number</label>
+								<input type="number" name="card" id="card" maxlength="16" required>
+							</div>
+							<div class="form-row">
+								<label for="data">Expire Date</label>
+								<input type="date" name="data" id="data">
+							</div>
+						</fieldset>
+						<fieldset>
+							<legend>Livrare</legend>
+							<div class="form-row">
+								<label for="first-name">First name</label>
+								<input type="text" name="first-name" id="first-name" placeholder="Enter First Name...">
+							</div>
+							<div class="form-row">
+								<label for="last-name">Last name</label>
+								<input type="text" name="last-name" id="last-name" placeholder="Enter Last Name...">
+							</div>
+						</fieldset>
+						<fieldset>
+							<legend>Add product</legend>
+							<div class="form-row">
+								<label for="car">Car: </label>
+								<select name="cars" id="car">
+									<option value="" selected disabled hidden>Select car...</option>
+									<option value="volvo">Volvo</option>
+									<option value="opel">Opel</option>
+									<option value="renault">Renault</option>
+								</select>
+							</div>
+							<div class="form-row">
+								<label for="message">Message: </label>
+								<textarea name="message" id="message" cols="30" rows="10" placeholder="Enter message..."></textarea>
+							</div>
+							<div class="form-row">
+								<label for="options">Options</label>
+								<input type="checkbox" name="options[]" id="" class="check" value="Sensors">Sensors
+								<input type="checkbox" name="options[]" id="" class="check" value="Camera">Camera
+							</div>
+							<div class="form-row">
+								<label for="color"> Colors</label>
+								<input type="radio" name="color" id="bm" class="radio" value="Black metal" checked>Black metal
+								<input type="radio" name="color" id="r" class="radio" value="Red">Red
+								<input type="radio" name="color" id="w" class="radio" value="White">White
+								<input type="radio" name="color" id="g" class="radio" value="Green">Green
+							</div>
+						</fieldset>
+						<input type="submit" value="Send Data" class="btn btn-send">
+						<input type="reset" value="Reset Data" class="btn btn-reset" disabled>
+					</form>
+				</section>
+				<aside class="right">
+					<iframe width="380" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+					</iframe>
+				</aside>
+				<aside>
+					<div class="form-row">
+						<label for="upload"></label>
+						<input type="file" name="upload" id="upload">
+					</div>
+				</aside>
+			</article>
+			<footer>
+				<header>
+					<h3>Our address is: </h3>
+				</header>
+				<article>
+					<section>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis reprehenderit earum corrupti
+							recusandae magni
+							dolorum fugit obcaecati asperiores, minus reiciendis placeat tempora perferendis, a quaerat non nisi modi
+							necessitatibus
+							eius!</p>
+					</section>
+					<section>
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.837970092496!2d26.0993881!3d44.4364858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff46e86936c1%3A0xa5ca8365e0ce3627!2sStrada%20Academiei%2C%20Bucure%C8%99ti!5e0!3m2!1sro!2sro!4v1669739312083!5m2!1sro!2sro"
+							width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</section>
+				</article>
+			</footer>
+		</main>
 		<footer id="footer">
 			<p>
 				<a href="index.html">Home</a> |
