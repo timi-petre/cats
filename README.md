@@ -9,7 +9,7 @@ A project only HTML and CSS about Cats.
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot]([https://via.placeholder.com/468x300?text=App+Screenshot+Here](https://user-images.githubusercontent.com/12413810/233024011-8fbd7974-bcfa-484d-a6d3-011814fc6a68.png))
 
 
 
