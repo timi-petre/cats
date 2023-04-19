@@ -182,8 +182,8 @@ a[href^='http'] {
 	margin: 20px auto;
 	clear: both;
 	overflow: auto;
-	display: flex;
-	flex-flow: row wrap;
+	/* display: flex;
+	flex-flow: row wrap; */
 }
 .cols {
 	width: 30%;
@@ -486,5 +486,10 @@ img {
 	#tbl_2 td:nth-child(3),
 	#tbl_2 th:nth-child(3) {
 		display: none;
+	}
+
+	.row {
+		display: flex;
+		flex-flow: row wrap;
 	}
 }
