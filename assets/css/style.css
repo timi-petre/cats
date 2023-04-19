@@ -21,8 +21,10 @@ body {
 	color: #555555;
 }
 
+#main,
 #logo,
 #menubar,
+#site_content,
 #footer {
 	margin: 0 auto;
 }
@@ -145,6 +147,7 @@ a[href^='http'] {
 	margin: 35px auto;
 	overflow: hidden;
 }
+
 /* Banner img */
 #banner-container {
 	padding: 0 0 10px 0;
@@ -179,12 +182,15 @@ a[href^='http'] {
 	margin: 20px auto;
 	clear: both;
 	overflow: auto;
+	display: flex;
+	flex-flow: row wrap;
 }
 .cols {
 	width: 30%;
 	float: left;
 	padding: 10px;
 	min-height: 150px;
+	flex: 1;
 }
 .cols > img {
 	width: 100%;
@@ -368,8 +374,62 @@ img {
 	font: 100% arial, sans-serif;
 }
 
-/* Mobile */
-@media (max-width: 596px) {
+.logo {
+	display: none;
+	color: #af7cb4;
+	font-size: 2em;
+	margin-left: 10px;
+	padding-top: 0;
+}
+
+.logo img {
+	width: 100%;
+	max-width: 1.2em;
+	filter: invert(100%);
+}
+
+/* Mobile MENU */
+/* Menu Icon */
+
+.hamb {
+	display: none;
+	cursor: pointer;
+	float: right;
+	padding: 20px;
+}
+
+.hamb-line {
+	background: #ffffff;
+	display: block;
+	height: 2px;
+	position: relative;
+	width: 24px;
+}
+
+.hamb-line::before,
+.hamb-line::after {
+	background: #ffffff;
+	content: '';
+	display: block;
+	height: 100%;
+	position: absolute;
+	transition: all 0.2s ease-out;
+	width: 100%;
+}
+
+.hamb-line::before {
+	top: 5px;
+}
+
+.hamb-line::after {
+	top: -5px;
+}
+.side-menu {
+	display: none;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
 	.hidden {
 		display: block;
 	}
@@ -379,5 +439,52 @@ img {
 		background-position-y: bottom;
 		border-bottom: 1px solid #3d3d3d2d;
 		color: #ffffff;
+	}
+
+	.side-menu:checked ~ #menu {
+		max-height: 700px;
+		display: inline-block;
+		position: absolute;
+		right: 10px;
+		top: 25px;
+		z-index: 2000;
+		margin: 20px 0;
+		padding: 10px 20px;
+		background-color: #2d2d2d;
+	}
+
+	.side-menu:checked ~ .hamb .hamb-line {
+		background: transparent;
+	}
+
+	.side-menu:checked ~ .hamb .hamb-line::before {
+		transform: rotate(-45deg);
+		top: 0;
+	}
+
+	.side-menu:checked ~ .hamb .hamb-line::after {
+		transform: rotate(45deg);
+		top: 0;
+	}
+
+	#menu {
+		display: none;
+		max-height: 0;
+		transition: max-height 0.5s ease-out;
+	}
+
+	#menu li {
+		float: none !important;
+		display: grid;
+	}
+
+	.hamb,
+	.logo {
+		display: inline-block;
+	}
+
+	#tbl_2 td:nth-child(3),
+	#tbl_2 th:nth-child(3) {
+		display: none;
 	}
 }
